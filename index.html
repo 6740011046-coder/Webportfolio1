@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <style>
-     
-       .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #cf5f5f; /* สีเดิม */
-  padding: 20px 40px;
+     html {
+  scroll-behavior: smooth;
 }
+          .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #cf5f5f; 
+      padding: 20px 40px;
+    }   
 
 .logo {
   color: white;
@@ -77,7 +79,7 @@
   gap: 40px;
 }
 
-/* รูปไม่ล้นจอ */
+
 .hero-img img{
   width: 100%;
   max-width: 300px;
@@ -120,7 +122,7 @@
 }
 .hero {
   width: 100%;
-  max-width: 900px;   /* ขนาดตอนจอใหญ่ */
+  max-width: 900px;   
   margin: auto;
 }
 
@@ -136,10 +138,6 @@
     padding: 10px;
   }
 }
-
-
-
-     
       * {
         margin: 0;
         padding: 0;
@@ -470,26 +468,34 @@
 
   <body>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+      <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href'))
+          .scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+    </script>
 
-    <header class="navbar">
-  <div class="logo">Yossapat Sukjarean</div>
+        <header class="navbar">
+      <div class="logo">Yossapat Sukjarean</div>
 
-  <nav class="menu" id="menu">
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#work">Work</a>
-  <a href="#contact">Contact</a>
-</nav>
+      <nav class="menu" id="menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
 
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
-</header>
-    <script>
-  function toggleMenu() {
-    document.getElementById("menu").classList.toggle("show");
-  }
-</script>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </header>
+        <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("show");
+      }
+    </script>
 
 
     <div class="hero">
