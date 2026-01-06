@@ -69,6 +69,75 @@
     display: block;
   }
 }
+.hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  gap: 40px;
+}
+
+/* รูปไม่ล้นจอ */
+.hero-img img{
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+}
+@media (max-width: 768px){
+  .hero{
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-img img{
+    max-width: 220px;
+  }
+}
+@media (max-width: 768px){
+  .about-content{
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .about-text{
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px){
+  .skills-content{
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .skills-img img{
+    max-width: 220px;
+  }
+}
+.hero {
+  width: 100%;
+  max-width: 900px;   /* ขนาดตอนจอใหญ่ */
+  margin: auto;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .hero {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+
 
      
       * {
@@ -284,14 +353,14 @@
       .work-grid img:hover {
         transform: scale(1.05);
       }
-      .card {
-          width: 800px;
-          margin: auto;
-          background: #fff;
-          border-radius: 20px;
-          overflow: hidden;
-          box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-        }
+          .card {
+      width: 100%;
+      max-width: 800px;  
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
         .card-link {
           text-decoration: none;
           color: inherit;
@@ -309,10 +378,13 @@
 
         .card-body h2 {
           margin: 0 0 10px;
+          
+          
         }
 
         .card-body p {
           color: #555;
+          font-size: 16px;  
         }
 
         .tech {
@@ -397,7 +469,9 @@
   </head>
 
   <body>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
     <header class="navbar">
   <div class="logo">Yossapat Sukjarean</div>
 
@@ -474,6 +548,10 @@
     </section>
 
     <section id="work">
+            <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      </head>
+
       <h2 class="section-title">Work</h2>
       <div class="work-grid">
         <a href="https://sites.google.com/psu.ac.th/6740011046/home" target="_blank" class="card-link">
@@ -501,7 +579,7 @@
           <input type="email" placeholder="Email" required>
           <textarea placeholder="Message" rows="6"></textarea>
           <div class="btn-container">
-            <button type="submit">Enviar</button>
+            <button type="submit">Send</button>
           </div>
         </form>
       </div>
