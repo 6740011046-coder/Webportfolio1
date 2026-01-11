@@ -6,24 +6,60 @@
 }
 .white-wrapper {
   width: 100%;
-  max-width: 95%;   /* ลดความกว้างบนมือถือ */
+  max-width: 95%;   
   background: white;
   border-radius: 50px;
   box-shadow: 0 0 60px rgba(0,0,0,0.08);
   padding: 80px 20px;
   margin: 0 auto;
 }
-@media(max-width:600px){
-  .white-wrapper {
-    padding: 40px 15px;
-    border-radius: 20px;
-    max-width: 90%;
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 20px;
   }
+
+  .card {
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .card {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .profile-img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 
   .hero-card {
     padding: 30px;
   }
-}
+
 html {
   scroll-behavior: smooth;
 }
@@ -151,7 +187,7 @@ body {
   margin: 0 auto;
   max-width: 1200px;
 }
-/* Layout หลัก */
+
 .hero {
   display: flex;
   align-items: center;
