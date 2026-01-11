@@ -4,7 +4,26 @@
   box-sizing:border-box;
   font-family:'Poppins', sans-serif;
 }
+.white-wrapper {
+  width: 100%;
+  max-width: 95%;   /* ลดความกว้างบนมือถือ */
+  background: white;
+  border-radius: 50px;
+  box-shadow: 0 0 60px rgba(0,0,0,0.08);
+  padding: 80px 20px;
+  margin: 0 auto;
+}
+@media(max-width:600px){
+  .white-wrapper {
+    padding: 40px 15px;
+    border-radius: 20px;
+    max-width: 90%;
+  }
 
+  .hero-card {
+    padding: 30px;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
