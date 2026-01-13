@@ -1,18 +1,21 @@
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio IS YOSSAPAT</title>
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+<section id="home"></section>
 
   <header class="navbar">
-    <div class="logo">Yossapat Sukjarean</div>
+    <div class="logo">𝒀𝑶𝑺𝑺𝑨𝑷𝑨𝑻 𝑺𝑼𝑲𝑱𝑨𝑹𝑬𝑨𝑵</div>
     <nav class="menu" id="menu">
       <a href="#home">Home</a>
       <a href="#about">About</a>
@@ -21,102 +24,118 @@
       <a href="#contact">Contact</a>
     </nav>
     <div class="hamburger" onclick="toggleMenu()">☰</div>
-    </header>
-        <script>
-      function toggleMenu() {
-        document.getElementById("menu").classList.toggle("show");
-      }
-    </script>
-  <section id="home">
-  <div class="white-wrapper">
-    <div class="hero">
-      <div class="hero-card">
-        <h1>Hi,<br> I'm <span>Yossapat</span></h1>
-        <p>Web portfolio</p>
-        <div class="buttons">
-          <a href="#contact" class="btn-outline">Contact</a>
-          <a href="#work" class="btn-fill">My HomeWork</a>
-        </div>
-      </div>
+  </header>
 
-      <div class="hero-image">
-        <img src="pro.jpg">
+  <section id="hero">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h3 class="hello">Hello</h3>
+      <h1 class="title">I'm <span class="gradient-name">Yossapat</span></h1>
+      <p class="subtitle">Web Portfolio</p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-outline">Contact</a>
+        <a href="#work" class="btn-fill">My Homework</a>
       </div>
+    </div>
+
+    <div class="hero-img">
+      <img src="pro.jpg" alt="Profile Photo">
     </div>
   </div>
 </section>
-    
 
-  <section id="about">
-    <h2 class="section-title">About</h2>
-    <div class="about-content">
-      <img src="pro.jpg" alt="About Me" />
-      <div class="card">
-        <h2>I'm YOSSAPAT</h2>
-        <p>สวัสดีครับ ผมชื่อยศภัทร์ สุขเจริญ เป็นนักศึกษาสาขาเทคโนโลยีสารสนเทศ คณะวิทยาศาสตร์และเทคโนโลยีอุตสาหกรรม มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตสุราษฎร์ธานี</p>
+ <section id="about">
+  <h2 class="section-title">About Me</h2>
+
+  <div class="about-wrapper">
+
+ 
+    <div class="about-photo">
+      <img src="pro.jpg" alt="Profile Photo" />
+    </div>
+
+    
+    <div class="about-card">
+      <h3 class="name">I'm <span>Yossapat</span></h3>
+      <p class="bio">
+        นาย ยศภัทร์ สุขเจริญ นักศึกษาสาขาเทคโนโลยีสารสนเทศ คณะวิทยาศาสตร์และเทคโนโลยีอุตสาหกรรม มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตสุราษฎร์ธานี
+      </p>
+
+      <div class="info-grid">
+        <div class="info-box">
+          <h4>Age</h4>
+          <p>20</p>
+        </div>
+        <div class="info-box">
+          <h4>Student information</h4>
+          <p>Yossapat Sukjarean 6740011046</p>
+        </div>
+        <div class="info-box">
+          <h4>Location</h4>
+          <p>Surat Thani, Thailand</p>
+        </div>
       </div>
     </div>
-  </section>
 
+  </div>
+</section>
   <section id="skills">
     <h2 class="section-title">Skills</h2>
-
     <div class="skill-box">
-      <p>HTML</p>
+      <p>Microsoft</p>
+      <div class="bar"><div class="fill" style="width: 80%"></div></div>
+    </div>
+    <div class="skill-box">
+      <p>HTML / CSS</p>
       <div class="bar"><div class="fill" style="width: 50%"></div></div>
     </div>
-
     <div class="skill-box">
-      <p>CSS</p>
+      <p>Design</p>
       <div class="bar"><div class="fill" style="width: 50%"></div></div>
-    </div>
-
-    <div class="skill-box">
-      <p>JavaScript</p>
-      <div class="bar"><div class="fill" style="width: 40%"></div></div>
     </div>
   </section>
 
-  <section id="work">
-    <h2 class="section-title">Work</h2>
-    <div class="work-grid">
-      <a href="https://sites.google.com/psu.ac.th/6740011046/home" target="_blank" class="card-link">
-        <div class="card">
-          <img src="Home.jpg" alt="Homework">
-          <div class="card-body">
-            <h2>Homework Website</h2>
-            
-          </div>
-        </div>
-      </a>
-    </div>
-  </section>
+ 
+ <section id="work">
+  <h2>Work</h2>
+  <div class="divider"></div>
+
+  <div class="work-card">
+    <a href="https://sites.google.com/psu.ac.th/6740011046/home" target="_blank">
+      <img src="Home.jpg" alt="Homework">
+    </a>
+    <h3>Homework Website</h3>
+  </div>
+</section>
 
   <section id="contact">
-    <h2 class="section-title">Contact</h2>
-    <div class="contact-container">
-      <form class="contact-form">
-        <input type="text" placeholder="Name" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Message" rows="6"></textarea>
-        <div class="btn-container">
-          <button type="submit">Send</button>
-        </div>
-      </form>
-    </div>
-  </section>
+  <h2>Contact</h2>
+<div class="divider"></div>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder=" Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
 
   <footer>
-    <h3>YOSSAPAT</h3>
-    <p>© Yossapat Sukjarean OWEN 6740011046</p>
-  </footer>
-
-  
-  <script>
-    function toggleMenu() {
-      document.getElementById("menu").classList.toggle("show");
-    }
-  </script>
+  <h3>YOSSAPAT</h3>
+  <p>© Yossapat Sukjarean OWEN 6740011046</p>
+  <p>
+    <a href="mailto:6740011046@psu.ac.th">
+      ✉️ 6740011046@psu.ac.th
+    </a>
+  </p>
+</footer>
+<script>
+  function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+  }
+</script>
 
 </body>
 </html>
